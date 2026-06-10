@@ -26,14 +26,6 @@ A lightweight macOS utility that opens the current Finder folder in Visual Studi
 2. Unzip it
 3. Hold `⌘` and drag `Open in Code.app` into the Finder toolbar
 
-### Homebrew
-
-```bash
-brew install --cask ./Casks/open-in-code.rb
-```
-
-Then hold `⌘` and drag the app from `/Applications` into the Finder toolbar.
-
 ### Build from source
 
 ```bash

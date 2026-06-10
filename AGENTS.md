@@ -36,11 +36,3 @@ No test suite exists. To verify manually:
 ## Release
 
 Push a tag `v*` to trigger `.github/workflows/release.yml`. The workflow builds the universal binary, ad-hoc signs it, zips the `.app`, and creates a GitHub Release.
-
-## Homebrew cask
-
-`Casks/open-in-code.rb` — installable with:
-```bash
-brew install --cask ./Casks/open-in-code.rb
-```
-The cask expects a GitHub Release URL pattern: `.../releases/download/v{VERSION}/Open.in.Code.app.zip`
