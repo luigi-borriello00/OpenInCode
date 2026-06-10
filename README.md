@@ -21,7 +21,7 @@ A lightweight macOS utility that opens the current Finder folder in Visual Studi
 ## Build
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/OpenInCode.git
+git clone https://github.com/luigi-borriello00/OpenInCode.git
 cd OpenInCode
 ./build.sh
 ```
