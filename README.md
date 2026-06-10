@@ -38,6 +38,12 @@ cd OpenInCode
 
 Click the icon in the Finder toolbar — it opens the current Finder folder in VS Code.
 
+<p align="center">
+  <img src=".github/assets/Using.gif" alt="Using Open in Code" width="600">
+  <br><br>
+  <img src=".github/assets/Dragging.gif" alt="Dragging to Finder toolbar" width="600">
+</p>
+
 > **First launch:**
 > 1. Right-click the app and select *Open* to bypass Gatekeeper.
 > 2. macOS will ask permission for the app to control Finder — click *OK*.
