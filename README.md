@@ -26,6 +26,10 @@ A lightweight macOS utility that opens the current Finder folder in Visual Studi
 2. Unzip it
 3. Hold `⌘` and drag `Open in Code.app` into the Finder toolbar
 
+<p align="center">
+  <img src=".github/assets/Dragging.gif" alt="Dragging to Finder toolbar" width="600">
+</p>
+
 ### Build from source
 
 ```bash
@@ -40,8 +44,6 @@ Click the icon in the Finder toolbar — it opens the current Finder folder in V
 
 <p align="center">
   <img src=".github/assets/Using.gif" alt="Using Open in Code" width="600">
-  <br><br>
-  <img src=".github/assets/Dragging.gif" alt="Dragging to Finder toolbar" width="600">
 </p>
 
 > **First launch:**
