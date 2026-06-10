@@ -6,8 +6,10 @@
     <string>en</string>
     <key>CFBundleExecutable</key>
     <string>OpenInCode</string>
-    <key>CFBundleIdentifier</key>
-    <string>com.openincode.app</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.openincode.app</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
     <key>CFBundleName</key>
@@ -22,7 +24,9 @@
     <string>11.0</string>
     <key>LSUIElement</key>
     <true/>
-    <key>NSHighResolutionCapable</key>
-    <true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This app needs to control Finder to open the current folder in VS Code.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
 </dict>
 </plist>

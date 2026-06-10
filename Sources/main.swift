@@ -20,6 +20,9 @@ func getFinderPath() -> String? {
     guard let output = appleScript?.executeAndReturnError(&error).stringValue,
           error == nil
     else {
+        if let errorInfo = error {
+            NSLog("AppleScript error: \(errorInfo)")
+        }
         return nil
     }
 
@@ -31,6 +34,7 @@ func openInVSCode(path: String) {
     task.launchPath = "/usr/bin/open"
     task.arguments = ["-n", "-b", "com.microsoft.VSCode", "--args", path]
     task.launch()
+    task.waitUntilExit()
 }
 
 guard let finderPath = getFinderPath() else {
