@@ -1,0 +1,30 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        run: ./build.sh
+
+      - name: Ad-hoc sign
+        run: codesign --force --deep --sign - "build/Open in Code.app"
+
+      - name: Zip
+        run: |
+          cd build
+          zip -r "Open in Code.app.zip" "Open in Code.app"
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/Open in Code.app.zip
+          generate_release_notes: true

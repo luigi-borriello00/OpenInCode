@@ -18,7 +18,23 @@ A lightweight macOS utility that opens the current Finder folder in Visual Studi
 - [Visual Studio Code](https://code.visualstudio.com/) installed in `/Applications`
 - Xcode Command Line Tools (`xcode-select --install`)
 
-## Build
+## Install
+
+### Download (recommended)
+
+1. Download `Open in Code.app.zip` from the [latest release](https://github.com/luigi-borriello00/OpenInCode/releases/latest)
+2. Unzip it
+3. Hold `⌘` and drag `Open in Code.app` into the Finder toolbar
+
+### Homebrew
+
+```bash
+brew install --cask ./Casks/open-in-code.rb
+```
+
+Then hold `⌘` and drag the app from `/Applications` into the Finder toolbar.
+
+### Build from source
 
 ```bash
 git clone https://github.com/luigi-borriello00/OpenInCode.git
@@ -26,15 +42,11 @@ cd OpenInCode
 ./build.sh
 ```
 
-The script compiles a universal binary (`arm64` + `x86_64`) and packages it into `build/Open in Code.app`.
+## Usage
 
-## Install
+Click the icon in the Finder toolbar — it opens the current Finder folder in VS Code.
 
-1. Open the `build/` folder in Finder
-2. Hold `⌘` (Command) and drag `Open in Code.app` into the Finder toolbar
-3. Click it whenever you want to open the current folder in VS Code
-
-> **macOS Gatekeeper:** if you see a security warning, right-click the app and select *Open*, then confirm.
+> **First launch:** right-click the app and select *Open* to bypass Gatekeeper.
 
 ## How It Works
 
